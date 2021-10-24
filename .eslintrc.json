@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "ignorePatterns": ["node_modules"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "airbnb-base",
+    "prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:unicorn/recommended"
+  ],
+  "rules": {
+    "no-console": "off"
+  }
+}
