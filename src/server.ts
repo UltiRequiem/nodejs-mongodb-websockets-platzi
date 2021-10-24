@@ -1,12 +1,12 @@
 import express from "express";
 
+import { helloWorldRouter } from "./routers";
+
 const app = express();
 
 const PORT = 3000;
 
-app.get("/", (_request, response) => {
-  response.send({ message: "Hello" });
-});
+app.use(helloWorldRouter);
 
 app.listen(PORT, () => {
   console.log(`The application is listening  on http://localhost:${PORT}`);

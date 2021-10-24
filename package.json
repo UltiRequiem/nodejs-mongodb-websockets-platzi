@@ -9,6 +9,7 @@
   "private": false,
   "scripts": {
     "start": "nodemon src/server.ts",
+    "production": "tsc && node src/server.js",
     "lint": "eslint . --ext .ts"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "@typescript-eslint/parser": "^5.1.0",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-unicorn": "^37.0.1",
