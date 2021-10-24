@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-mongodb-websockets-platzi",
+  "version": "1.0.0",
+  "description": "Platzi Course",
+  "main": "index.js",
+  "repository": "git@github.com:UltiRequiem/nodejs-mongodb-websockets-platzi.git",
+  "author": "Eliaz Bobadilla <eliaz.bobadilladev@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "tsc && node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.4",
+    "typescript": "^4.4.4"
+  }
+}
