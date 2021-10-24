@@ -1,9 +1,14 @@
 import { Router } from "express";
 
-const helloWorldRouter = Router();
+export const helloWorldRouter = Router();
 
 helloWorldRouter.get("/", (_request, response) => {
   response.send("Hello World!");
 });
 
-export { helloWorldRouter };
+helloWorldRouter.post("/message", (request, response) => {
+  console.log(request.body);
+  response.send("Ok");
+});
+
+export const otherRouter = Router();
