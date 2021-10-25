@@ -1,32 +1,14 @@
 {
   "root": true,
-  "ignorePatterns": ["node_modules"],
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "ignorePatterns": [
+    "node_modules"
+  ],
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
     "airbnb-base",
-    "airbnb-typescript/base",
     "prettier",
-    "plugin:import/typescript",
-    "plugin:@typescript-eslint/recommended",
     "plugin:unicorn/recommended"
   ],
-
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-
-  "settings": {
-    "import/extensions": [".ts"],
-    "@typescript-eslint/parser": [".ts"],
-    "import/resolver": {
-      "node": {
-        "extensions": [".ts"]
-      }
-    }
-  },
   "rules": {
     "no-console": "off"
   }

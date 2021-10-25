@@ -1,34 +1,33 @@
 {
   "name": "nodejs-mongodb-websockets-platzi",
   "version": "1.0.0",
+  "type": "module",
   "description": "Platzi Course",
-  "main": "index.js",
   "repository": "git@github.com:UltiRequiem/nodejs-mongodb-websockets-platzi.git",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
   "author": "Eliaz Bobadilla <eliaz.bobadilladev@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "nodemon src/server.ts",
-    "production": "tsc && node src/server.js",
-    "lint": "eslint . --ext .ts"
+    "start": "nodemon src/server.js",
+    "production": "node src/server.js",
+    "lint": "eslint . --ext .js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "socket.io": "^4.3.1"
   },
   "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/node": "^16.11.4",
-    "@typescript-eslint/eslint-plugin": "^5.1.0",
-    "@typescript-eslint/parser": "^5.1.0",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-airbnb-typescript": "^14.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-unicorn": "^37.0.1",
-    "nodemon": "^2.0.14",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.4.4"
+    "nodemon": "^2.0.14"
   }
 }
